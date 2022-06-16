@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Baloo Bhai 2", cursive;
+  background-image: url(./135837.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.openBtn {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+.openButton {
+  top: 250px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1c87c9;
+  color: white;
+  padding: 20px 20px;
+  cursor: pointer;
+  position: fixed;
+  font-size: 30px;
+}
+.openButton:hover {
+  background-color: #cc0000;
+  color: black;
+  transform: translateY(-10%);
+  transition: all 400ms;
+}
+
+.formPopup {
+  display: none;
+  position: absolute;
+  top: -150px;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  border: 3px solid #999999;
+  z-index: 9;
+  text-align: center;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  justify-content: space-evenly;
+  border: none;
+}
+.logged {
+  display: none;
+  position: relative;
+  border: 3px solid #999999;
+  z-index: 9;
+  text-align: center;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  justify-content: space-evenly;
+  border: none;
+}
+
+.formContainer {
+  max-width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 30px;
+  border: none;
+}
+.formContainer select,
+.formContainer input[type="text"],
+.formContainer input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 20px 0;
+  border: none;
+  background: #eee;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  justify-content: space-evenly;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.formContainer select:focus,
+.formContainer input[type="text"]:focus,
+.formContainer input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+.formContainer .btn {
+  padding: 12px 20px;
+  border: none;
+  background-color: #8ebf42;
+  color: #fff;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 15px;
+  opacity: 0.8;
+}
+.formContainer .cancel {
+  background-color: #cc0000;
+}
+.formContainer .btn:hover,
+.openButton:hover {
+  opacity: 1;
+}
+.logged_form {
+  width: 350px;
+  padding: 15px;
+  margin: 5px 0 20px 0;
+  border: none;
+  background: #eee;
+  color: #db2b2b;
+  font-weight: 900;
+  font-size: 25px;
+  border-radius: 10px;
+}
+button {
+  border-radius: 10px;
+}
+h2{
+  color: #8ebf42;
+  font-weight: 900;
+
+}
+strong{
+  font-size: 20px;
+}

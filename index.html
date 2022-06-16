@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="openBtn">
+      <button class="openButton" onclick="openForm()">
+        <strong>Register Now</strong>
+      </button>
+    </div>
+
+    <div class="formPopup" id="popupForm">
+      <div class="formContainer" id="form">
+        <h2>Please Log In</h2>
+        <label for="name"></label>
+        <input
+          type="text"
+          id="name"
+          placeholder="Your Name And Sirname"
+          name="name"
+          value
+        />
+        <label for="email"></label>
+        <input
+          type="text"
+          id="email"
+          placeholder="Your Email"
+          name="email"
+          value=""
+        />
+        <label for="phone"></label>
+        <input
+          type="text"
+          id="phone"
+          placeholder="Your Phone Number"
+          name="phone"
+          value=""
+        />
+        <label for="club"></label>
+        <select name="club" id="club">
+            <option hidden disabled selected value> Your Favourite Football Team </option>
+          <option value="Galatasaray">Galatasaray</option>
+          <option value="Barcelona">Barcelona</option>
+          <option value="Real Madrid">Real Madrid</option>
+          <option value="Manchester City">Manchester City</option>
+        </select>
+
+        <button type="" class="btn" id="send">Log in</button>
+        <button type="" class="btn cancel" onclick="closeForm()">Close</button>
+        <button type="" class="btn" id="reset">Reset</button>
+      </div>
+    </div>
+
+    <div class="logged" id="logged">
+      <div class="formContainer">
+        <h2>You Loggged In As:</h2>
+        <strong>Your Name and Sirname is</strong>
+        <div class="logged_form" id="name_holder"></div>
+        <strong>Your e-mail is</strong>
+        <div class="logged_form" id="email_holder"></div>
+        <strong>Your Phone Number is</strong>
+        <div class="logged_form" id="phone_holder"></div>
+        <strong>Your Favourite Fotball Club is</strong>
+        <div class="logged_form" id="club_holder"></div>
+
+        <button type="" class="btn cancel" onclick="closeLogged()">
+          Close
+        </button>
+        <button type="" class="btn" id="clear">Clear Data</button>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
